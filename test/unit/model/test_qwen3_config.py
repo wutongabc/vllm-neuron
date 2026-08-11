@@ -98,7 +98,7 @@ class _FakeQwen3Model(torch.nn.Module):
         super().__init__()
 
     def forward(self, *args, **kwargs):
-        return torch.ones((1, 2), dtype=torch.bfloat16), []
+        return torch.ones((1, 2), dtype=torch.bfloat16)
 
 
 class _FakeColumnParallelLinear(torch.nn.Module):
